@@ -1,0 +1,1 @@
+# Misc Javacript ES6
