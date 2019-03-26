@@ -61,7 +61,7 @@ function GenerateSlips(){
 		// Now that the loop has finished, let's output some meaningful data to the user
 		
 		let lottoResults = `Your lucky numbers are: ${generatedNumbers[0]}, ${generatedNumbers[1]}, ${generatedNumbers[2]}, ${generatedNumbers[3]}, ${generatedNumbers[4]} and ${generatedNumbers[5]}`;
-		let lottoHTMLOutput =  logSlips.innerHTML = lottoResults;
+		logSlips.innerHTML = lottoResults;
 		
 		// Since the output has already been displayed, let's reset the variable 
 		generatedNumbers = [];
