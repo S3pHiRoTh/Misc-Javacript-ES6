@@ -1,0 +1,26 @@
+/*
+Name: Main.css
+Description: StyleSheet for the lottery number generator website
+Author: A.Taylor
+
+*/
+
+/*
+body {
+min-width: 640px;
+max-width: 1080px;
+width: 50%;
+background: blue;
+margin: auto 0;
+}
+
+*/
+
+body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;	
+		text-align: center;
+}
+

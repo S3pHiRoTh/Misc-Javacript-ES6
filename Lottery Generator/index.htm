@@ -1,0 +1,43 @@
+<! DOCTYPE HTML>
+<!-- 
+Project: Lottery Number Generator Website
+Description: A simple website that uses JavaScript to generate lottery numbers
+Project Start Date: 21/03/19
+Author: A.Taylor
+-->
+
+<html>
+
+<head>
+	<link href="./css/main.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+	<title>Lottery Generator | Home</title>
+
+</head>
+
+<body>
+
+	<h1>Lottery Generator</h1>
+
+	<p>Welcome to Lottery Generator &copy;. Lottery Generator allows you to generate lottery numbers for you! If you are a winner, please send me a thank you ( ͡° ͜ʖ ͡°) </p>
+	
+	<div class="main">
+		<p> Let's get started! How many lotto slips would you like to generate?</p>
+		
+		<div class="form">
+			<!--<label>Slips to generate: </label>
+			 <input type="text" id="slipsToGenerate" class="slipField"/> -->
+			<input type="submit" id="submitbutton" class="slipButton" value="Generate my lucky slips!" onclick="GenerateSlips()" />
+	
+		</div>
+		
+		<p id="slipResults"></p>
+	
+	
+	</div>
+</body>
+
+<!-- Scripts to go here! -->
+<script src="./scripts/lottoGen.js" /></script>
+
+</html>
