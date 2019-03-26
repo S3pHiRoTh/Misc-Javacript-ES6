@@ -8,6 +8,8 @@ Language: JavaScript
 
 // Amount of slips the user wants to generate
 let slipAmount = document.querySelectorAll("slipsToGenerate");
+
+// variable to reference the HTML element to apply the lotto results to
 let logSlips = document.getElementById('slipResults');
 
 // max amount of slips that can be generated, there's not really any need for this, but this is to safeguard the user, so the website doesn't crash their PC by entering something daft like a million slips...
@@ -15,6 +17,8 @@ const maxSlips = 100;
 
 // Create an empty generatedNumbers to store our numbers. We can also use this same generatedNumbers to check this against the random generated number so we do not generate duplicate numbers.
 let generatedNumbers = [];
+
+// Create lottoResults as a global variable so our other functions can access it
 
 function GenerateSlips(){
 		console.log("button clicked");
@@ -58,12 +62,21 @@ function GenerateSlips(){
 		// outputting the result to the console so we can cross reference this with the actual output on the website
 		console.log(generatedNumbers);
 			
-		// Now that the loop has finished, let's output some meaningful data to the user
+		// Now that the loop has finished, let's output some meaningful data to the user <3
 		
-		let lottoResults = `Your lucky numbers are: ${generatedNumbers[0]}, ${generatedNumbers[1]}, ${generatedNumbers[2]}, ${generatedNumbers[3]}, ${generatedNumbers[4]} and ${generatedNumbers[5]}`;
-		logSlips.innerHTML = lottoResults;
+		let lottoResults = createSlipElement(`Your lucky numbers are: ${generatedNumbers[0]}, ${generatedNumbers[1]}, ${generatedNumbers[2]}, ${generatedNumbers[3]}, ${generatedNumbers[4]} and ${generatedNumbers[5]}`);
 		
 		// Since the output has already been displayed, let's reset the variable 
 		generatedNumbers = [];
 
+}
+
+// function to create some new baby elements and append them to the website dynamically.
+
+function createSlipElement(lottoResults){
+	// create a paragraph element
+	let slipBlock = document.createElement("P");
+	slipBlock.innerHTML = lottoResults;
+	document.body.appendChild(slipBlock);
+	
 }
