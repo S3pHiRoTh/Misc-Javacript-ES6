@@ -1,0 +1,16 @@
+=============================
+Javascript Lottery Number Generator 
+=============================
+
+Project Start Date: 21/03/19
+Language: JavaScript
+
+Endgame of the project:
+
+- A website that offers the user the ability to generator a specified number of lotto slips, which then can be saved / exported to the user's PC. The lotto generator will feature the many different draws that the official lottery offers (euro millions, lotto, Thunderball, etc)
+
+Features (Current and planned):
+- Lotto numbers are generated and displayed on the screen. The user can generate more than one slip in one session.
+- The lotto numbers can only be unique and no duplicates can be in the same slip. For example, the following will not be generated: 10, 8, 10, 5, 2 (One of the 10's is a duplicate, therefore should not be generated)
+- The user can specify a number of slips to generate.
+- The slips will be presented in a nice graphic, when they are generated.
