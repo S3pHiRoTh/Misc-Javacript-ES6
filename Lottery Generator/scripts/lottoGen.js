@@ -6,9 +6,6 @@ Author: A.Taylor
 Language: JavaScript
 */
 
-// Grab the text field element
-let userInput = document.getElementById('userInput').value;
-
 // variable to reference the HTML element to apply the lotto results to
 let logSlips = document.getElementById('slipResults');
 
